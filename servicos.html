@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mundo Pet: produtos e serviços para cuidar do seu melhor amigo.">
+  <title>Serviços | Mundo Pet</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a class="logo" href="index.html"><span class="logo-icon">🐾</span><span>Mundo Pet</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav aria-label="Menu principal">
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="index.html">Início</a></li>
+        <li><a href="produtos.html" data-page="produtos.html">Produtos</a></li>
+        <li><a href="servicos.html" data-page="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html" data-page="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html" data-page="contato.html">Contato</a></li>
+        <li><a class="cart-link" href="carrinho.html" data-page="carrinho.html">🛒 Carrinho (<span class="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-banner"><div class="container"><h1>Nossos serviços</h1><p>Cuidados especiais para que seu companheiro esteja sempre limpo, confortável e feliz.</p></div></section>
+<section class="section"><div class="container">
+  <div class="cards">
+    <article class="card"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" alt="Cão recebendo banho"><div class="card-content"><h3>Banho completo</h3><p>Banho, secagem e escovação dos pelos.</p><div class="price">A partir de R$ 45,00</div><a class="btn" href="#agendamento">Agendar</a></div></article>
+    <article class="card"><img src="C:\Users\Aluno\Documents\foto/banho.jpg" alt="Cachorro após cuidados"><div class="card-content"><h3>Banho e tosa</h3><p>Higiene e corte conforme o tipo de pelo do animal.</p><div class="price">A partir de R$ 65,00</div><a class="btn" href="#agendamento">Agendar</a></div></article>
+    <article class="card"><img src="C:\Users\Aluno\Documents\foto/dente.jpg" alt="Cachorro sendo escovado"><div class="card-content"><h3>Escovação e unhas</h3><p>Cuidados de rotina para ajudar no conforto do pet.</p><div class="price">A partir de R$ 25,00</div><a class="btn" href="#agendamento">Agendar</a></div></article>
+  </div>
+</div></section>
+<section class="section" id="agendamento" style="background:#f0f8f2"><div class="container" style="max-width:760px">
+  <h2>Solicitar agendamento</h2><p style="margin-bottom:22px">Preencha os dados. Este formulário é apenas uma demonstração e não confirma uma reserva real.</p>
+  <form id="booking-form" class="form-grid">
+    <div class="form-group"><label for="owner">Nome do responsável</label><input id="owner" name="owner" required placeholder="Seu nome"></div>
+    <div class="form-group"><label for="phone">Telefone</label><input id="phone" name="phone" required type="tel" placeholder="(00) 00000-0000"></div>
+    <div class="form-group"><label for="pet">Nome do pet</label><input id="pet" name="pet" required placeholder="Nome do animal"></div>
+    <div class="form-group"><label for="species">Espécie</label><select id="species" required><option value="">Selecione</option><option>Cachorro</option><option>Gato</option><option>Outro</option></select></div>
+    <div class="form-group"><label for="service">Serviço desejado</label><select id="service" required><option value="">Selecione</option><option>Banho completo</option><option>Banho e tosa</option><option>Escovação e unhas</option></select></div>
+    <div class="form-group"><label for="date">Data pretendida</label><input id="date" type="date" required></div>
+    <div class="form-group full"><button class="btn" type="submit">Enviar solicitação</button></div>
+  </form>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h3>🐾 Mundo Pet</h3><p>Carinho, cuidado e tudo o que seu melhor amigo precisa.</p></div>
+      <div><h3>Links rápidos</h3><ul><li><a href="produtos.html">Produtos</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="contato.html">Fale conosco</a></li></ul></div>
+      <div><h3>Funcionamento</h3><p>Segunda a sábado<br>9h às 18h</p><p>📍 Endereço demonstrativo</p></div>
+    </div>
+    <div class="copyright">© 2026 Mundo Pet — Site demonstrativo para fins educacionais.</div>
+  </div>
+</footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
